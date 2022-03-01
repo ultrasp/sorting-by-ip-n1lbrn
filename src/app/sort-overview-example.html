@@ -5,10 +5,10 @@
     <th mat-sort-header="interface">Interfeys</th>
   </tr>
 
-  <tr *ngFor="let dessert of sortedData">
-    <td>{{ dessert.address + "/" + dessert.mask }}</td>
-    <td>{{dessert.gateway}}</td>
-    <td>{{dessert.interface}}</td>
+  <tr *ngFor="let addressItem of sortedData">
+    <td>{{ addressItem.address + "/" + addressItem.mask }}</td>
+    <td>{{addressItem.gateway}}</td>
+    <td>{{addressItem.interface}}</td>
   </tr>
 </table>
 

@@ -18,7 +18,7 @@ export interface Route {
   styleUrls: ['sort-overview-example.css'],
 })
 export class SortOverviewExample {
-  desserts: Route[] = [
+  addressList: Route[] = [
     {
       uuid: 'uweq1',
       address: '0.0.0.0',
@@ -73,11 +73,11 @@ export class SortOverviewExample {
   sortedData: Route[];
 
   constructor() {
-    this.sortedData = this.desserts.slice();
+    this.sortedData = this.addressList.slice();
   }
 
   sortData(sort: Sort) {
-    const data = this.desserts.slice();
+    const data = this.addressList.slice();
     if (!sort.active || sort.direction === '') {
       this.sortedData = data;
       return;
